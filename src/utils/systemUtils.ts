@@ -26,6 +26,10 @@ export function getCategoryColor(
       return "info";
     case "Storage":
       return "primary";
+    case "Frameworks & Runtimes":
+      return "secondary";
+    case "Security":
+      return "warning";
     default:
       return "default";
   }

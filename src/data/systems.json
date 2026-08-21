@@ -119,7 +119,7 @@
     "license": "AGPL-3.0",
     "websiteUrl": "https://www.scylladb.com",
     "githubUrl": "https://github.com/scylladb/scylladb",
-    "documentationUrl": "https://docs.scylladb.com/",
+    "documentationUrl": "https://docs.scylladb.com/...",
     "architectureNotes": "Shared-nothing, thread-per-core asynchronous architecture based on the Seastar framework, bypassing kernel cache with direct I/O and zero garbage collection pauses.",
     "keyFeatures": [
       "Sub-millisecond P99 latency at millions of IOPS",
@@ -394,6 +394,28 @@
     "stars": 6500,
     "iconEmoji": "🚀",
     "tags": ["Serverless", "FaaS", "Kubernetes", "Scale-to-Zero", "CNCF"]
+  },
+  {
+    "id": "grpc",
+    "name": "gRPC",
+    "tagline": "High-performance, open source universal RPC framework",
+    "description": "gRPC is a modern, open source high-performance Remote Procedure Call (RPC) framework that can run in any environment. It can efficiently connect services in and across data centers with pluggable support for load balancing, tracing, health checking, and authentication.",
+    "category": "Frameworks & Runtimes",
+    "languages": ["C++", "C", "Go", "Java", "Python"],
+    "license": "Apache-2.0",
+    "websiteUrl": "https://grpc.io",
+    "githubUrl": "https://github.com/grpc/grpc",
+    "documentationUrl": "https://grpc.io/docs/",
+    "architectureNotes": "Layered architecture over HTTP/2 framing (multiplexing streams over a single TCP connection, HPACK header compression, flow control) utilizing Protocol Buffers (proto3) as the Interface Definition Language (IDL) and binary wire serialization format with pluggable interceptors and name resolvers.",
+    "keyFeatures": [
+      "High-efficiency binary serialization using Protocol Buffers (Protobuf)",
+      "Bi-directional, client-side, and server-side streaming over HTTP/2",
+      "First-class polyglot code generation across 10+ programming languages",
+      "Pluggable middleware interceptors for auth, logging, distributed tracing, and metrics"
+    ],
+    "stars": 42000,
+    "iconEmoji": "🔌",
+    "tags": ["RPC", "HTTP/2", "Protobuf", "Microservices", "Polyglot", "CNCF"]
   },
   {
     "id": "envoy",
