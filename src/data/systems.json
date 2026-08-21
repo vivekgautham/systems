@@ -418,6 +418,28 @@
     "tags": ["RPC", "HTTP/2", "Protobuf", "Microservices", "Polyglot", "CNCF"]
   },
   {
+    "id": "fastapi",
+    "name": "FastAPI",
+    "tagline": "High performance, easy to learn, fast to code, production-ready web framework for APIs in Python",
+    "description": "FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.8+ based on standard Python type hints, Starlette, and Pydantic.",
+    "category": "Frameworks & Runtimes",
+    "languages": ["Python"],
+    "license": "MIT",
+    "websiteUrl": "https://fastapi.tiangolo.com",
+    "githubUrl": "https://github.com/fastapi/fastapi",
+    "documentationUrl": "https://fastapi.tiangolo.com/",
+    "architectureNotes": "Asynchronous ASGI architecture built on top of Starlette for high-performance async routing/HTTP handling and Pydantic v2 (Rust-backed core) for rapid request/response data validation, serialization, and automatic OpenAPI schema generation.",
+    "keyFeatures": [
+      "High performance on par with NodeJS and Go via Starlette and Uvicorn",
+      "Automatic interactive API documentation with Swagger UI and ReDoc",
+      "Robust data validation and serialization powered by Pydantic",
+      "Intuitive dependency injection system for modular auth and database sessions"
+    ],
+    "stars": 85000,
+    "iconEmoji": "⚡",
+    "tags": ["API", "Async", "ASGI", "Python", "Pydantic", "OpenAPI", "REST"]
+  },
+  {
     "id": "envoy",
     "name": "Envoy Proxy",
     "tagline": "High-performance edge/middle/service proxy designed for cloud-native applications",
@@ -460,5 +482,27 @@
     "stars": 55000,
     "iconEmoji": "🔥",
     "tags": ["Monitoring", "TSDB", "Metrics", "PromQL", "Observability"]
+  },
+  {
+    "id": "consul",
+    "name": "HashiCorp Consul",
+    "tagline": "Distributed service networking, service discovery, and key-value configuration platform",
+    "description": "Consul is a multi-cloud service networking platform to connect, secure, and configure services across any runtime environment and cloud provider, offering service discovery, service mesh, health checking, and a distributed KV store.",
+    "category": "Distributed Systems",
+    "languages": ["Go"],
+    "license": "BSL-1.1",
+    "websiteUrl": "https://www.consul.io",
+    "githubUrl": "https://github.com/hashicorp/consul",
+    "documentationUrl": "https://developer.hashicorp.com/consul/docs",
+    "architectureNotes": "Client-Server agent architecture utilizing Raft consensus protocol for server cluster state and leader election, and SWIM gossip protocol (Serf library) for membership, failure detection, and event broadcasting across WAN/LAN pools.",
+    "keyFeatures": [
+      "Distributed Service Discovery via DNS and HTTP interfaces",
+      "Service Mesh with transparent mTLS encryption and intention-based authorization",
+      "Hierarchical distributed Key-Value store with atomic transactions",
+      "Cross-datacenter federation via WAN gossip pools"
+    ],
+    "stars": 28000,
+    "iconEmoji": "🏛️",
+    "tags": ["Service Discovery", "Service Mesh", "Raft", "Distributed KV", "Gossip Protocol", "Multi-Cloud"]
   }
 ]
