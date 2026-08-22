@@ -849,5 +849,272 @@
       "CNCF",
       "Metrics"
     ]
+  },
+  {
+    "id": "tokio",
+    "name": "Tokio",
+    "tagline": "Asynchronous event-driven runtime for the Rust programming language",
+    "description": "Tokio is an event-driven, non-blocking I/O platform for writing asynchronous applications with the Rust programming language. It provides multi-threaded task scheduling, non-blocking network abstractions, timers, and cooperative synchronization primitives.",
+    "category": "Frameworks & Runtimes",
+    "languages": ["Rust"],
+    "license": "MIT",
+    "websiteUrl": "https://tokio.rs",
+    "githubUrl": "https://github.com/tokio-rs/tokio",
+    "documentationUrl": "https://docs.rs/tokio/latest/tokio/",
+    "architectureNotes": "Work-stealing cooperative green-thread scheduler, non-blocking OS I/O reactor backed by epoll/kqueue/IOCP (via mio), intrusive timer wheels, and zero-allocation asynchronous future polling.",
+    "keyFeatures": [
+      "High-performance work-stealing multi-threaded task scheduler",
+      "Non-blocking asynchronous TCP/UDP and UNIX domain sockets",
+      "Cooperative multitasking preventing compute-heavy tasks from starving I/O",
+      "Comprehensive ecosystem powering Hyper, Tonic (gRPC), Axum, and Tower"
+    ],
+    "stars": 28000,
+    "iconEmoji": "🦀",
+    "tags": [
+      "Async",
+      "Runtime",
+      "Rust",
+      "Event-Driven",
+      "Networking",
+      "Concurrency"
+    ]
+  },
+  {
+    "id": "bun",
+    "name": "Bun",
+    "tagline": "Incredibly fast all-in-one JavaScript runtime, bundler, test runner, and package manager",
+    "description": "Bun is an all-in-one JavaScript & TypeScript runtime and toolkit designed for speed, complete with a bundler, test runner, package manager, and Node.js-compatible API layer.",
+    "category": "Frameworks & Runtimes",
+    "languages": ["Zig", "C++", "JavaScript", "TypeScript"],
+    "license": "MIT",
+    "websiteUrl": "https://bun.sh",
+    "githubUrl": "https://github.com/oven-sh/bun",
+    "documentationUrl": "https://bun.sh/docs",
+    "architectureNotes": "Written from scratch in Zig utilizing WebKit's JavaScriptCore engine rather than V8, featuring custom low-level memory allocators, zero-copy system calls, and optimized native SQLite and HTTP bindings.",
+    "keyFeatures": [
+      "Native TypeScript and JSX transpilation with zero config",
+      "Drop-in Node.js API compatibility with significantly faster startup times",
+      "Ultra-fast npm-compatible package manager with global module caching",
+      "Built-in blazing fast native SQLite client and HTTP/WebSocket server"
+    ],
+    "stars": 76000,
+    "iconEmoji": "🥟",
+    "tags": [
+      "JavaScript",
+      "TypeScript",
+      "Runtime",
+      "Zig",
+      "Bundler",
+      "Package Manager"
+    ]
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "tagline": "Open-source, cross-platform JavaScript runtime environment built on V8",
+    "description": "Node.js is an open-source, cross-platform JavaScript runtime environment that executes JavaScript code outside a web browser, powering millions of web backends, microservices, and developer toolchains globally.",
+    "category": "Frameworks & Runtimes",
+    "languages": ["JavaScript", "C++", "C"],
+    "license": "MIT",
+    "websiteUrl": "https://nodejs.org",
+    "githubUrl": "https://github.com/nodejs/node",
+    "documentationUrl": "https://nodejs.org/docs/latest/api/",
+    "architectureNotes": "Single-threaded event loop architecture powered by libuv for cross-platform asynchronous I/O and thread pooling, interfacing with Google's V8 JIT compilation engine.",
+    "keyFeatures": [
+      "Non-blocking asynchronous event-driven I/O model",
+      "Massive ecosystem with over 2 million packages via npm",
+      "Worker threads for CPU-bound computation and multithreading",
+      "Native support for ECMAScript modules (ESM) and CommonJS"
+    ],
+    "stars": 108000,
+    "iconEmoji": "🟢",
+    "tags": ["JavaScript", "Runtime", "V8", "libuv", "Async", "Server"]
+  },
+  {
+    "id": "deno",
+    "name": "Deno",
+    "tagline": "Secure-by-default modern JavaScript and TypeScript runtime built in Rust",
+    "description": "Deno is a modern, secure JavaScript, TypeScript, and WebAssembly runtime with built-in developer tools, standard library, and native web platform standard APIs.",
+    "category": "Frameworks & Runtimes",
+    "languages": ["Rust", "TypeScript", "JavaScript"],
+    "license": "MIT",
+    "websiteUrl": "https://deno.com",
+    "githubUrl": "https://github.com/denoland/deno",
+    "documentationUrl": "https://docs.deno.com/",
+    "architectureNotes": "Built on V8, Tokio, and Rust with secure sandboxing that denies file, network, and environment access unless explicitly granted, and native URL-based module loading.",
+    "keyFeatures": [
+      "Secure by default with explicit runtime permission flags",
+      "First-class TypeScript support without external build steps or configuration",
+      "Standard web APIs (Fetch, WebSockets, Streams, Crypto) implemented natively",
+      "Built-in unified developer toolchain (linter, formatter, test runner, bundler)"
+    ],
+    "stars": 95000,
+    "iconEmoji": "🦕",
+    "tags": ["TypeScript", "JavaScript", "Runtime", "Rust", "V8", "Security"]
+  },
+  {
+    "id": "wasmtime",
+    "name": "Wasmtime",
+    "tagline": "Fast and secure standalone runtime for WebAssembly and WASI",
+    "description": "Wasmtime is a standalone, lightweight, and secure WebAssembly (Wasm) runtime that implements the WebAssembly System Interface (WASI) standard. It is governed by the Bytecode Alliance for building sandboxed, cross-platform serverless and plugin architectures.",
+    "category": "Frameworks & Runtimes",
+    "languages": ["Rust", "C"],
+    "license": "Apache-2.0",
+    "websiteUrl": "https://wasmtime.dev",
+    "githubUrl": "https://github.com/bytecodealliance/wasmtime",
+    "documentationUrl": "https://docs.wasmtime.dev/",
+    "architectureNotes": "Built on the Cranelift code generator optimizing WebAssembly bytecode into native machine code with memory-isolated linear memory sandboxes and fine-grained capability-based security (WASI).",
+    "keyFeatures": [
+      "Cranelift JIT compiler producing fast machine code tailored for low startup latency",
+      "Memory safety with hardware-isolated linear memory and zero host-process risk",
+      "Full support for WASI (WebAssembly System Interface) standards and component model",
+      "Embeddable into Rust, C, C++, Python, Go, and .NET applications"
+    ],
+    "stars": 16000,
+    "iconEmoji": "🌐",
+    "tags": [
+      "WebAssembly",
+      "Wasm",
+      "WASI",
+      "Sandboxing",
+      "Bytecode Alliance",
+      "Rust"
+    ]
+  },
+  {
+    "id": "netty",
+    "name": "Netty",
+    "tagline": "Asynchronous event-driven network application framework for high-performance protocol servers",
+    "description": "Netty is a NIO client-server framework which enables quick and easy development of network applications such as protocol servers and clients. It simplifies network programming such as TCP and UDP socket servers.",
+    "category": "Frameworks & Runtimes",
+    "languages": ["Java", "C"],
+    "license": "Apache-2.0",
+    "websiteUrl": "https://netty.io",
+    "githubUrl": "https://github.com/netty/netty",
+    "documentationUrl": "https://netty.io/wiki/",
+    "architectureNotes": "Reactor pattern with channel pipelines, event loops bound to selector threads, byte buffer pooling (ByteBuf with zero-copy slicing), and native JNI transports for epoll and kqueue.",
+    "keyFeatures": [
+      "High-throughput, low-latency asynchronous non-blocking event-driven pipeline",
+      "Zero-copy capability with pooled off-heap ByteBuf allocations",
+      "Extensive protocol codec support including HTTP/1.1, HTTP/2, WebSocket, and SSL/TLS",
+      "Core networking engine powering Apache Cassandra, Kafka, Elasticsearch, and Spark"
+    ],
+    "stars": 33000,
+    "iconEmoji": "🕸️",
+    "tags": ["Networking", "Java", "Async", "Event-Driven", "NIO", "Protocols"]
+  },
+  {
+    "id": "seastar",
+    "name": "Seastar",
+    "tagline": "Advanced open-source C++ framework for high-performance server applications on modern multi-core hardware",
+    "description": "Seastar is an advanced, open-source C++ framework for high-performance server applications on modern multi-core hardware. It powers systems like ScyllaDB and Redpanda, delivering millions of IOPS per node.",
+    "category": "Frameworks & Runtimes",
+    "languages": ["C++"],
+    "license": "Apache-2.0",
+    "websiteUrl": "https://seastar.io",
+    "githubUrl": "https://github.com/scylladb/seastar",
+    "documentationUrl": "https://docs.seastar.io/",
+    "architectureNotes": "Shared-nothing, thread-per-core asynchronous architecture utilizing futures, promises, and continuation-passing style (CPS) with user-space memory management, non-blocking direct I/O, and CPU core pinning.",
+    "keyFeatures": [
+      "Shared-nothing thread-per-core design eliminating inter-thread locking overhead",
+      "Explicit memory management avoiding kernel page cache thrashing",
+      "Native asynchronous disk and network I/O with io_uring and DPDK integration",
+      "Capable of saturating modern NVMe SSDs and 100GbE network interfaces"
+    ],
+    "stars": 8500,
+    "iconEmoji": "⭐",
+    "tags": [
+      "C++",
+      "Thread-per-Core",
+      "High Throughput",
+      "Shared-Nothing",
+      "Low Latency"
+    ]
+  },
+  {
+    "id": "actix-web",
+    "name": "Actix Web",
+    "tagline": "Powerful, pragmatic, and blazingly fast HTTP web framework for Rust",
+    "description": "Actix Web is a powerful, pragmatic, and extremely fast web framework for Rust that provides type-safe routing, middleware support, and high concurrency on top of Tokio and the Actix actor system.",
+    "category": "Frameworks & Runtimes",
+    "languages": ["Rust"],
+    "license": "MIT",
+    "websiteUrl": "https://actix.rs",
+    "githubUrl": "https://github.com/actix/actix-web",
+    "documentationUrl": "https://actix.rs/docs/",
+    "architectureNotes": "Multi-worker thread model running individual Tokio runtime event loops per worker core, utilizing zero-allocation type extractors, streaming HTTP body processing, and Keep-Alive connection pools.",
+    "keyFeatures": [
+      "Consistently ranks among the top fastest web frameworks in TechEmpower benchmarks",
+      "Extensible middleware architecture for logging, CORS, sessions, and authentication",
+      "Type-safe extractor pattern for request headers, paths, query strings, and JSON payloads",
+      "Full HTTP/1.x, HTTP/2, and WebSocket protocol support"
+    ],
+    "stars": 22000,
+    "iconEmoji": "⚡",
+    "tags": [
+      "Rust",
+      "HTTP",
+      "Web Framework",
+      "Async",
+      "High Performance",
+      "REST"
+    ]
+  },
+  {
+    "id": "gin",
+    "name": "Gin Web Framework",
+    "tagline": "Blazing-fast HTTP web framework for Go featuring a Martini-like API with custom Radix tree routing",
+    "description": "Gin is a high-performance HTTP web framework written in Go. It features a Martini-like API with performance up to 40 times faster thanks to its custom Radix tree routing engine and zero dynamic memory allocation during request matching.",
+    "category": "Frameworks & Runtimes",
+    "languages": ["Go"],
+    "license": "MIT",
+    "websiteUrl": "https://gin-gonic.com",
+    "githubUrl": "https://github.com/gin-gonic/gin",
+    "documentationUrl": "https://gin-gonic.com/docs/",
+    "architectureNotes": "Custom prefix tree (Radix tree) routing algorithm with zero heap allocations during path parameter extraction, modular middleware chaining, and JSON/Protobuf binding validators.",
+    "keyFeatures": [
+      "Radix tree routing engine for fast lookup without heap allocations",
+      "Middleware chaining for crash recovery, logging, authentication, and CORS",
+      "JSON, XML, YAML, and ProtoBuf request binding and validation",
+      "Extremely low memory footprint and simple error management"
+    ],
+    "stars": 80000,
+    "iconEmoji": "🍸",
+    "tags": [
+      "Go",
+      "Web Framework",
+      "HTTP",
+      "REST",
+      "Radix Tree",
+      "Microservices"
+    ]
+  },
+  {
+    "id": "temporal",
+    "name": "Temporal",
+    "tagline": "Durable execution platform and workflow runtime for building fault-tolerant distributed applications",
+    "description": "Temporal is an open-source durable execution platform that enables developers to build resilient applications without worrying about transient failures, retries, state recovery, or distributed rollbacks.",
+    "category": "Frameworks & Runtimes",
+    "languages": ["Go", "TypeScript", "Java", "Python"],
+    "license": "MIT",
+    "websiteUrl": "https://temporal.io",
+    "githubUrl": "https://github.com/temporalio/temporal",
+    "documentationUrl": "https://docs.temporal.io/",
+    "architectureNotes": "Event-sourced durable execution model where workflow code execution state is durably appended to an event history log, allowing workflows to pause, sleep for years, and resume seamlessly across worker failures and system crashes.",
+    "keyFeatures": [
+      "Durable execution model guaranteeing code completes regardless of server crashes or network outages",
+      "Native code-as-workflow orchestration without complex JSON/YAML DSLs",
+      "Automatic retries, backoff policies, long-running timers, and saga compensation",
+      "Polyglot SDKs for Go, TypeScript, Java, Python, and .NET"
+    ],
+    "stars": 15000,
+    "iconEmoji": "⏳",
+    "tags": [
+      "Durable Execution",
+      "Workflows",
+      "Distributed Systems",
+      "Orchestration",
+      "Microservices"
+    ]
   }
 ]
