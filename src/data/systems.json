@@ -462,6 +462,28 @@
     "tags": ["Proxy", "Service Mesh", "Networking", "gRPC", "CNCF"]
   },
   {
+    "id": "fabio",
+    "name": "Fabio",
+    "tagline": "Zero-configuration HTTP(S) and TCP load balancing router for microservices with Consul",
+    "description": "Fabio is a fast, modern, zero-configuration HTTP(S) and TCP load balancing router designed to work out-of-the-box with HashiCorp Consul. It automatically configures routing tables dynamically from Consul service tags without requiring config reloads.",
+    "category": "Networking",
+    "languages": ["Go"],
+    "license": "MIT",
+    "websiteUrl": "https://fabiolb.net",
+    "githubUrl": "https://github.com/fabiolb/fabio",
+    "documentationUrl": "https://fabiolb.net",
+    "architectureNotes": "Dynamic in-memory routing table built by subscribing to Consul's blocking HTTP watch APIs. Incoming HTTP(S) and TCP requests are matched against prefix routing trees with support for TLS SNI passthrough, dynamic certificates via Vault/Consul, and weighted round-robin distribution.",
+    "keyFeatures": [
+      "Zero-configuration dynamic routing driven entirely by Consul service tags (e.g., urlprefix-/api)",
+      "Sub-millisecond latency HTTP/1.1, HTTP/2, and TCP SNI proxying",
+      "Real-time routing table updates with zero downtime or config reloads",
+      "Built-in web dashboard for visual routing table inspection and health status"
+    ],
+    "stars": 7400,
+    "iconEmoji": "🔀",
+    "tags": ["Load Balancer", "Reverse Proxy", "Consul", "Zero-Config", "Microservices", "Networking"]
+  },
+  {
     "id": "prometheus",
     "name": "Prometheus",
     "tagline": "Monitoring system and time series database for cloud-native systems",
