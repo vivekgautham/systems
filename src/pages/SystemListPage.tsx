@@ -265,10 +265,9 @@ export default function SystemListPage() {
               gridTemplateColumns: {
                 xs: "1fr",
                 sm: "repeat(2, 1fr)",
-                md: "repeat(3, 1fr)",
-                lg: "repeat(4, 1fr)",
+                lg: "repeat(3, 1fr)",
               },
-              gap: 2,
+              gap: 2.5,
             }}
           >
             {filteredSystems.map((system) => (
@@ -296,7 +295,7 @@ export default function SystemListPage() {
                     flexDirection: "column",
                     alignItems: "stretch",
                     justifyContent: "flex-start",
-                    p: 2.5,
+                    p: 3,
                   }}
                 >
                   <CardContent sx={{ p: 0, "&:last-child": { pb: 0 } }}>
@@ -307,8 +306,8 @@ export default function SystemListPage() {
                       justifyContent="space-between"
                       sx={{ mb: 1.5 }}
                     >
-                      <Stack direction="row" alignItems="center" spacing={1}>
-                        <Typography sx={{ fontSize: "1.75rem", lineHeight: 1 }}>
+                      <Stack direction="row" alignItems="center" spacing={1.25}>
+                        <Typography sx={{ fontSize: "2rem", lineHeight: 1 }}>
                           {system.iconEmoji || "📦"}
                         </Typography>
                         <Chip
@@ -317,7 +316,7 @@ export default function SystemListPage() {
                           color={getCategoryColor(system.category)}
                           variant="outlined"
                           sx={{
-                            fontSize: "0.7rem",
+                            fontSize: "0.72rem",
                             fontWeight: 700,
                             borderRadius: 1.5,
                           }}
@@ -329,7 +328,7 @@ export default function SystemListPage() {
                           icon={
                             <StarIcon
                               sx={{
-                                fontSize: "0.9rem !important",
+                                fontSize: "0.95rem !important",
                                 color: "#f59e0b !important",
                               }}
                             />
@@ -337,8 +336,8 @@ export default function SystemListPage() {
                           size="small"
                           label={formatStars(system.stars)}
                           sx={{
-                            height: 22,
-                            fontSize: "0.7rem",
+                            height: 24,
+                            fontSize: "0.72rem",
                             fontWeight: 700,
                             backgroundColor: "rgba(245, 158, 11, 0.12)",
                             color: "#fbbf24",
@@ -354,9 +353,9 @@ export default function SystemListPage() {
                       component="h2"
                       sx={{
                         fontWeight: 700,
-                        fontSize: "1.1rem",
+                        fontSize: "1.2rem",
                         lineHeight: 1.3,
-                        mb: 0.5,
+                        mb: 0.75,
                       }}
                     >
                       {system.name}
@@ -367,12 +366,12 @@ export default function SystemListPage() {
                       variant="body2"
                       color="text.secondary"
                       sx={{
-                        fontSize: "0.82rem",
-                        lineHeight: 1.4,
+                        fontSize: "0.88rem",
+                        lineHeight: 1.5,
                         mb: 2,
-                        minHeight: 44,
+                        minHeight: 62,
                         display: "-webkit-box",
-                        WebkitLineClamp: 2,
+                        WebkitLineClamp: 3,
                         WebkitBoxOrient: "vertical",
                         overflow: "hidden",
                       }}
@@ -386,21 +385,21 @@ export default function SystemListPage() {
                       alignItems="center"
                       justifyContent="space-between"
                       flexWrap="wrap"
-                      gap={0.5}
+                      gap={0.75}
                       sx={{
-                        pt: 1,
+                        pt: 1.5,
                         borderTop: "1px solid rgba(255, 255, 255, 0.06)",
                       }}
                     >
-                      <Stack direction="row" spacing={0.5} flexWrap="wrap">
+                      <Stack direction="row" spacing={0.75} flexWrap="wrap">
                         {system.languages.map((lang) => (
                           <Chip
                             key={lang}
                             size="small"
                             label={lang}
                             sx={{
-                              height: 20,
-                              fontSize: "0.68rem",
+                              height: 22,
+                              fontSize: "0.7rem",
                               fontWeight: 600,
                               backgroundColor: "rgba(148, 163, 184, 0.12)",
                               color: "#cbd5e1",
@@ -412,7 +411,7 @@ export default function SystemListPage() {
                       {system.githubUrl && (
                         <GitHubIcon
                           sx={{
-                            fontSize: "1rem",
+                            fontSize: "1.1rem",
                             color: "text.secondary",
                             opacity: 0.8,
                           }}

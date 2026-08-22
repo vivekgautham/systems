@@ -471,9 +471,10 @@ export default function SystemDetailPage() {
                               color="text.secondary"
                               sx={{
                                 display: "-webkit-box",
-                                WebkitLineClamp: 2,
+                                WebkitLineClamp: 3,
                                 WebkitBoxOrient: "vertical",
                                 overflow: "hidden",
+                                minHeight: 44,
                               }}
                             >
                               {item.tagline}
