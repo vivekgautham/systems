@@ -1116,5 +1116,271 @@
       "Orchestration",
       "Microservices"
     ]
+  },
+  {
+    "id": "rabbitmq",
+    "name": "RabbitMQ",
+    "tagline": "The most widely deployed open source message broker",
+    "description": "RabbitMQ is a reliable, mature, and widely deployed open source message broker. It supports multiple messaging protocols (AMQP 0-9-1, AMQP 1.0, MQTT, STOMP) and excels at complex message routing, buffering, and background job queuing.",
+    "category": "Message Brokers",
+    "languages": ["Erlang", "Elixir"],
+    "license": "MPL-2.0",
+    "websiteUrl": "https://www.rabbitmq.com",
+    "githubUrl": "https://github.com/rabbitmq/rabbitmq-server",
+    "documentationUrl": "https://www.rabbitmq.com/docs",
+    "architectureNotes": "Built on the Erlang/OTP actor runtime for massive concurrency and fault-tolerant supervision trees. Features flexible exchange-to-queue bindings (direct, fanout, topic, headers) and Raft-based Quorum Queues for strong consistency.",
+    "keyFeatures": [
+      "Flexible message routing topologies with Exchanges, Bindings, and Queues",
+      "Multi-protocol interoperability (AMQP 0-9-1, AMQP 1.0, MQTT 3.1/5.0, STOMP)",
+      "Raft-based Quorum Queues for high availability and data safety",
+      "RabbitMQ Streams for high-throughput append-only log streaming"
+    ],
+    "stars": 12500,
+    "iconEmoji": "🐇",
+    "tags": ["Message Broker", "AMQP", "PubSub", "Queues", "MQTT", "Erlang"]
+  },
+  {
+    "id": "nats",
+    "name": "NATS",
+    "tagline": "Connective fabric for cloud native applications, IoT messaging, and edge computing",
+    "description": "NATS is a CNCF graduated connective technology for adaptive edge architectures and cloud-native microservices. It provides publish-subscribe, request-reply, and distributed persistence with NATS JetStream.",
+    "category": "Message Brokers",
+    "languages": ["Go"],
+    "license": "Apache-2.0",
+    "websiteUrl": "https://nats.io",
+    "githubUrl": "https://github.com/nats-io/nats-server",
+    "documentationUrl": "https://docs.nats.io/",
+    "architectureNotes": "Single binary written in Go with an ultra-lightweight text/binary protocol, zero external dependencies, subject-based routing (tokens and wildcards), and Raft-replicated JetStream persistence engine.",
+    "keyFeatures": [
+      "Sub-millisecond latency pub/sub and synchronous request-reply primitives",
+      "NATS JetStream for at-least-once, exactly-once delivery and message persistence",
+      "Decentralized multi-cluster superclusters and leaf node edge topologies",
+      "Built-in Key-Value (KV) and Object Store distributed abstractions"
+    ],
+    "stars": 16500,
+    "iconEmoji": "⚡",
+    "tags": [
+      "PubSub",
+      "Message Broker",
+      "Edge Computing",
+      "JetStream",
+      "CNCF",
+      "Microservices"
+    ]
+  },
+  {
+    "id": "apache-pulsar",
+    "name": "Apache Pulsar",
+    "tagline": "Cloud-native, distributed pub-sub messaging and streaming platform",
+    "description": "Apache Pulsar is a cloud-native, distributed messaging and streaming platform that unifies traditional message queuing with real-time event streaming, featuring multi-tenancy and decoupled compute-storage tiers.",
+    "category": "Message Brokers",
+    "languages": ["Java", "C++", "Python", "Go"],
+    "license": "Apache-2.0",
+    "websiteUrl": "https://pulsar.apache.org",
+    "githubUrl": "https://github.com/apache/pulsar",
+    "documentationUrl": "https://pulsar.apache.org/docs/",
+    "architectureNotes": "Decoupled two-layer architecture separating stateless Pulsar compute broker nodes from stateful Apache BookKeeper distributed ledger storage, backed by tiered storage offloading to S3/GCS.",
+    "keyFeatures": [
+      "Unified queuing (competing consumers) and partitioned streaming models",
+      "Native multi-tenancy with fine-grained access control and quotas",
+      "Built-in geo-replication across global datacenters with automated failover",
+      "Infinite message retention with tiered storage offload to cloud object storage"
+    ],
+    "stars": 14500,
+    "iconEmoji": "💫",
+    "tags": [
+      "Event Streaming",
+      "PubSub",
+      "Multi-Tenant",
+      "BookKeeper",
+      "Geo-Replication"
+    ]
+  },
+  {
+    "id": "redpanda",
+    "name": "Redpanda",
+    "tagline": "Simple, powerful, and cost-efficient streaming data platform compatible with Apache Kafka",
+    "description": "Redpanda is a modern, drop-in replacement for Apache Kafka engineered in C++ using the Seastar framework. It delivers deterministic low latency, eliminates JVM garbage collection pauses, and requires zero external metadata dependencies like ZooKeeper.",
+    "category": "Message Brokers",
+    "languages": ["C++"],
+    "license": "BSL-1.1",
+    "websiteUrl": "https://redpanda.com",
+    "githubUrl": "https://github.com/redpanda-data/redpanda",
+    "documentationUrl": "https://docs.redpanda.com/",
+    "architectureNotes": "Shared-nothing, thread-per-core asynchronous C++ engine based on Seastar, utilizing direct NVMe I/O (O_DIRECT) and an embedded Raft consensus group per partition for metadata and data replication.",
+    "keyFeatures": [
+      "100% Kafka API and ecosystem compatible (Kafka clients, Kafka Connect, Schema Registry)",
+      "Single self-contained binary with zero JVM, ZooKeeper, or KRaft dependencies",
+      "Predictable sub-millisecond P99 tail latencies without GC pauses",
+      "Tiered storage with Shadow Indexing to push cold partition segments to object storage"
+    ],
+    "stars": 10500,
+    "iconEmoji": "🐼",
+    "tags": [
+      "Kafka Compatible",
+      "Event Streaming",
+      "C++",
+      "Seastar",
+      "Raft",
+      "Low Latency"
+    ]
+  },
+  {
+    "id": "emqx",
+    "name": "EMQX",
+    "tagline": "Ultra-scalable open-source distributed MQTT message broker for IoT, IIoT, and connected vehicles",
+    "description": "EMQX is the world's most scalable open-source MQTT messaging broker designed for IoT, Industrial IoT, and connected vehicle applications, supporting up to 100 million concurrent MQTT connections in a single cluster.",
+    "category": "Message Brokers",
+    "languages": ["Erlang", "Elixir", "C"],
+    "license": "Apache-2.0",
+    "websiteUrl": "https://www.emqx.io",
+    "githubUrl": "https://github.com/emqx/emqx",
+    "documentationUrl": "https://docs.emqx.com/",
+    "architectureNotes": "Distributed Erlang/OTP actor model with Mria split-brain resilient clustering (combining Mnesia with RocksDB/Raft) and an asynchronous eBPF network socket layer for massive TCP multiplexing.",
+    "keyFeatures": [
+      "Massive concurrency: Scales to 100M+ concurrent MQTT connections per cluster",
+      "Full support for MQTT 5.0, 3.1.1, MQTT-SN, CoAP, and LwM2M protocols",
+      "Built-in SQL-based real-time rules engine for data extraction and transformation",
+      "40+ out-of-the-box data bridges (Kafka, Pulsar, InfluxDB, PostgreSQL, S3)"
+    ],
+    "stars": 14000,
+    "iconEmoji": "🛰️",
+    "tags": ["MQTT", "IoT", "PubSub", "Edge", "Erlang", "High Concurrency"]
+  },
+  {
+    "id": "apache-rocketmq",
+    "name": "Apache RocketMQ",
+    "tagline": "Cloud-native distributed messaging and streaming data platform with financial-grade reliability",
+    "description": "Apache RocketMQ is a distributed messaging and streaming platform with low latency, high performance, massive message accumulation, and financial-grade transactional messaging capabilities, originally created by Alibaba.",
+    "category": "Message Brokers",
+    "languages": ["Java", "C++", "Go", "Rust"],
+    "license": "Apache-2.0",
+    "websiteUrl": "https://rocketmq.apache.org",
+    "githubUrl": "https://github.com/apache/rocketmq",
+    "documentationUrl": "https://rocketmq.apache.org/docs/",
+    "architectureNotes": "Decoupled Namesrv name service discovery and Broker cluster architecture utilizing a CommitLog physical storage file with ConsumeQueue logical indices and memory-mapped files (mmap).",
+    "keyFeatures": [
+      "Financial-grade two-phase transactional message guarantees",
+      "Flexible delay scheduling and timed message delivery with second-level precision",
+      "Ordered and strictly FIFO message queues within partitions",
+      "Massive topic scale supporting tens of thousands of topics on a single cluster"
+    ],
+    "stars": 21000,
+    "iconEmoji": "🚀",
+    "tags": [
+      "Message Broker",
+      "Event Streaming",
+      "Financial-Grade",
+      "PubSub",
+      "Transactional Messaging"
+    ]
+  },
+  {
+    "id": "zeromq",
+    "name": "ZeroMQ (ØMQ)",
+    "tagline": "High-performance asynchronous messaging library for distributed and concurrent applications",
+    "description": "ZeroMQ is an open-source, brokerless universal messaging library that provides smart sockets carrying atomic messages across in-process, inter-process (IPC), TCP, and multicast transports.",
+    "category": "Message Brokers",
+    "languages": ["C++", "C"],
+    "license": "MPL-2.0",
+    "websiteUrl": "https://zeromq.org",
+    "githubUrl": "https://github.com/zeromq/libzmq",
+    "documentationUrl": "https://zeromq.org/get-started/",
+    "architectureNotes": "Brokerless peer-to-peer messaging library implementing lock-free queues (ypipe), I/O multiplexing engines (epoll/kqueue), and socket framing protocols (ZMTP) for ultra-low latency and zero-copy message transfers.",
+    "keyFeatures": [
+      "Brokerless peer-to-peer messaging without centralized server bottlenecks",
+      "Built-in communication patterns: Pub-Sub, Request-Reply, Push-Pull (Pipeline), Exclusive Pair",
+      "Transport transparent across inproc, IPC, TCP, and PGM multicast",
+      "Microsecond-level latency and millions of messages per second throughput"
+    ],
+    "stars": 9500,
+    "iconEmoji": "0️⃣",
+    "tags": [
+      "Brokerless",
+      "Messaging Library",
+      "PubSub",
+      "Low Latency",
+      "Sockets",
+      "IPC"
+    ]
+  },
+  {
+    "id": "eclipse-mosquitto",
+    "name": "Eclipse Mosquitto",
+    "tagline": "Lightweight open source MQTT message broker for edge devices and IoT",
+    "description": "Eclipse Mosquitto is an open source message broker that implements the MQTT protocol versions 5.0, 3.1.1, and 3.1. It is lightweight and suitable for use on all devices from low-power single-board computers to full servers.",
+    "category": "Message Brokers",
+    "languages": ["C"],
+    "license": "EPL-2.0",
+    "websiteUrl": "https://mosquitto.org",
+    "githubUrl": "https://github.com/eclipse/mosquitto",
+    "documentationUrl": "https://mosquitto.org/documentation/",
+    "architectureNotes": "Single-threaded, asynchronous event loop daemon in C (using epoll/poll) with in-memory topic subscription trees and optional persistence to local disk (mosquitto.db).",
+    "keyFeatures": [
+      "Minimal footprint requiring only a few megabytes of RAM",
+      "Complete MQTT v5.0 and v3.1.1 specification compliance",
+      "TLS/SSL encryption and certificate-based client authentication",
+      "Built-in MQTT bridging for hierarchical broker networks"
+    ],
+    "stars": 9000,
+    "iconEmoji": "🦟",
+    "tags": ["MQTT", "IoT", "Lightweight", "Edge", "Embedded", "C"]
+  },
+  {
+    "id": "nsq",
+    "name": "NSQ",
+    "tagline": "Real-time distributed messaging platform designed to operate at scale",
+    "description": "NSQ is a realtime distributed messaging platform designed to operate at scale, handling billions of messages per day. It avoids single points of failure, provides high availability, and ensures message delivery guarantees.",
+    "category": "Message Brokers",
+    "languages": ["Go"],
+    "license": "MIT",
+    "websiteUrl": "https://nsq.io",
+    "githubUrl": "https://github.com/nsqio/nsq",
+    "documentationUrl": "https://nsq.io/overview/quick_start.html",
+    "architectureNotes": "Distributed topology consisting of nsqd daemons handling incoming/outgoing messages locally, nsqlookupd daemons providing decentralized consumer discovery without broker coordination, and nsqadmin Web UI.",
+    "keyFeatures": [
+      "Decentralized topology without centralized master broker or SPOF",
+      "High throughput with memory-first queues spilling gracefully to disk",
+      "Decentralized consumer discovery via nsqlookupd",
+      "Simple HTTP and TCP APIs with official clients in Go, Python, JavaScript, and Java"
+    ],
+    "stars": 25000,
+    "iconEmoji": "📬",
+    "tags": [
+      "PubSub",
+      "Distributed Messaging",
+      "Go",
+      "Real-Time",
+      "Decentralized"
+    ]
+  },
+  {
+    "id": "activemq-artemis",
+    "name": "Apache ActiveMQ Artemis",
+    "tagline": "High-performance, non-blocking asynchronous multi-protocol message broker",
+    "description": "Apache ActiveMQ Artemis is the next-generation, high-performance open-source message broker from Apache, built on a non-blocking asynchronous architecture with support for JMS 2.0, AMQP, MQTT, STOMP, and OpenWire.",
+    "category": "Message Brokers",
+    "languages": ["Java"],
+    "license": "Apache-2.0",
+    "websiteUrl": "https://activemq.apache.org/components/artemis/",
+    "githubUrl": "https://github.com/apache/activemq-artemis",
+    "documentationUrl": "https://activemq.apache.org/components/artemis/documentation/",
+    "architectureNotes": "Netty-based non-blocking asynchronous I/O core paired with a high-performance append-only journal (AIO/NIO) supporting shared-storage or network-replicated high-availability clusters.",
+    "keyFeatures": [
+      "Multi-protocol engine natively handling AMQP 1.0, MQTT, JMS 2.0, STOMP, and Core",
+      "High-performance native Linux AIO (Asynchronous I/O) persistence journal",
+      "Flexible clustering with server discovery, symmetric clustering, and message load balancing",
+      "Fine-grained divert, filter, and message routing capabilities"
+    ],
+    "stars": 2000,
+    "iconEmoji": "📯",
+    "tags": [
+      "Message Broker",
+      "JMS",
+      "AMQP",
+      "MQTT",
+      "Enterprise Messaging",
+      "Java"
+    ]
   }
 ]
