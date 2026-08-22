@@ -129,7 +129,13 @@
     ],
     "stars": 14000,
     "iconEmoji": "🐉",
-    "tags": ["NoSQL", "Wide-Column", "Low Latency", "Cassandra Compatible", "High Throughput"]
+    "tags": [
+      "NoSQL",
+      "Wide-Column",
+      "Low Latency",
+      "Cassandra Compatible",
+      "High Throughput"
+    ]
   },
   {
     "id": "neo4j",
@@ -305,7 +311,12 @@
     ],
     "stars": 15000,
     "iconEmoji": "🧭",
-    "tags": ["Orchestration", "Workload Manager", "Multi-Cloud", "Batch Scheduling"]
+    "tags": [
+      "Orchestration",
+      "Workload Manager",
+      "Multi-Cloud",
+      "Batch Scheduling"
+    ]
   },
   {
     "id": "apache-spark",
@@ -349,7 +360,12 @@
     ],
     "stars": 24000,
     "iconEmoji": "🐿️",
-    "tags": ["Stream Processing", "Real-Time", "Stateful Compute", "Event-Driven"]
+    "tags": [
+      "Stream Processing",
+      "Real-Time",
+      "Stateful Compute",
+      "Event-Driven"
+    ]
   },
   {
     "id": "containerd",
@@ -481,7 +497,14 @@
     ],
     "stars": 7400,
     "iconEmoji": "🔀",
-    "tags": ["Load Balancer", "Reverse Proxy", "Consul", "Zero-Config", "Microservices", "Networking"]
+    "tags": [
+      "Load Balancer",
+      "Reverse Proxy",
+      "Consul",
+      "Zero-Config",
+      "Microservices",
+      "Networking"
+    ]
   },
   {
     "id": "prometheus",
@@ -525,6 +548,306 @@
     ],
     "stars": 28000,
     "iconEmoji": "🏛️",
-    "tags": ["Service Discovery", "Service Mesh", "Raft", "Distributed KV", "Gossip Protocol", "Multi-Cloud"]
+    "tags": [
+      "Service Discovery",
+      "Service Mesh",
+      "Raft",
+      "Distributed KV",
+      "Gossip Protocol",
+      "Multi-Cloud"
+    ]
+  },
+  {
+    "id": "grafana",
+    "name": "Grafana",
+    "tagline": "Open and composable observability and interactive data visualization platform",
+    "description": "Grafana is an open-source analytics and interactive visualization web application. It provides rich charts, graphs, and alerts for the web when connected to supported time series databases, relational databases, and cloud monitoring services.",
+    "category": "Observability",
+    "languages": ["TypeScript", "Go"],
+    "license": "AGPL-3.0",
+    "websiteUrl": "https://grafana.com",
+    "githubUrl": "https://github.com/grafana/grafana",
+    "documentationUrl": "https://grafana.com/docs/grafana/latest/",
+    "architectureNotes": "Client-server architecture with Go backend handling authentication, data source proxying, alerting engine, and plugin management, paired with React/TypeScript frontend for composable dashboard rendering.",
+    "keyFeatures": [
+      "Dynamic, composable dashboards with dozens of visualization panel types",
+      "Native integrations with Prometheus, Loki, Tempo, OpenTelemetry, InfluxDB, and SQL databases",
+      "Unified alerting engine with multi-channel notification routing (Slack, PagerDuty, Webhooks)",
+      "Extensive plugin ecosystem for custom data sources, panel apps, and visualizations"
+    ],
+    "stars": 65000,
+    "iconEmoji": "📊",
+    "tags": [
+      "Dashboards",
+      "Visualization",
+      "Alerting",
+      "Observability",
+      "Metrics",
+      "Analytics"
+    ]
+  },
+  {
+    "id": "opentelemetry",
+    "name": "OpenTelemetry",
+    "tagline": "High-quality, ubiquitous, and standard telemetry data framework for cloud-native software",
+    "description": "OpenTelemetry (OTel) is a vendor-neutral collection of APIs, SDKs, and tools to instrument, generate, collect, and export telemetry data (metrics, logs, and traces) to analyze software performance and behavior.",
+    "category": "Observability",
+    "languages": ["Go", "Java", "Python", "Rust", "C++", "TypeScript"],
+    "license": "Apache-2.0",
+    "websiteUrl": "https://opentelemetry.io",
+    "githubUrl": "https://github.com/open-telemetry/opentelemetry-collector",
+    "documentationUrl": "https://opentelemetry.io/docs/",
+    "architectureNotes": "Standardized OTLP (OpenTelemetry Protocol) specification over gRPC/HTTP Protobuf, polyglot language SDKs for auto/manual instrumentation, and modular OTel Collector pipeline (Receivers, Processors, Exporters, and Extensions).",
+    "keyFeatures": [
+      "Vendor-neutral standard specification for traces, metrics, and logs (OTLP)",
+      "OpenTelemetry Collector for pipeline processing, batching, filtering, and routing",
+      "Zero-code auto-instrumentation and rich manual instrumentation APIs across 11+ languages",
+      "Graduated CNCF telemetry standard widely supported across modern APM ecosystems"
+    ],
+    "stars": 18000,
+    "iconEmoji": "🔭",
+    "tags": [
+      "Telemetry",
+      "Tracing",
+      "Metrics",
+      "Logs",
+      "OTLP",
+      "CNCF",
+      "Instrumentation"
+    ]
+  },
+  {
+    "id": "jaeger",
+    "name": "Jaeger",
+    "tagline": "Open source, end-to-end distributed tracing platform for cloud-native microservices",
+    "description": "Jaeger is a CNCF graduated distributed tracing platform used for monitoring and troubleshooting microservices-based distributed systems, including distributed transaction monitoring, performance optimization, and root-cause analysis.",
+    "category": "Observability",
+    "languages": ["Go"],
+    "license": "Apache-2.0",
+    "websiteUrl": "https://www.jaegertracing.io",
+    "githubUrl": "https://github.com/jaegertracing/jaeger",
+    "documentationUrl": "https://www.jaegertracing.io/docs/",
+    "architectureNotes": "Distributed tracing pipeline comprising Jaeger Agent and OTLP receivers, in-memory/Kafka buffer pipelines, pluggable storage backends (OpenSearch, Elasticsearch, Cassandra, Memory), and a React-based trace visualization UI.",
+    "keyFeatures": [
+      "End-to-end distributed context propagation and transaction tracing",
+      "High-precision latency analysis and bottleneck identification across microservices",
+      "Automated service dependency graph generation and topology mapping",
+      "Native OpenTelemetry compatibility and adaptive sampling strategies"
+    ],
+    "stars": 20000,
+    "iconEmoji": "🔍",
+    "tags": [
+      "Distributed Tracing",
+      "APM",
+      "Microservices",
+      "CNCF",
+      "Latency Analysis"
+    ]
+  },
+  {
+    "id": "grafana-loki",
+    "name": "Grafana Loki",
+    "tagline": "Horizontally scalable, highly available, multi-tenant log aggregation system",
+    "description": "Grafana Loki is a log aggregation system inspired by Prometheus. It is designed to be cost-effective and easy to operate, indexing only metadata labels instead of full-text logs and storing compressed chunk streams directly in object storage.",
+    "category": "Observability",
+    "languages": ["Go"],
+    "license": "AGPL-3.0",
+    "websiteUrl": "https://grafana.com/oss/loki/",
+    "githubUrl": "https://github.com/grafana/loki",
+    "documentationUrl": "https://grafana.com/docs/loki/latest/",
+    "architectureNotes": "Disaggregated microservices or monolithic single-binary architecture (Distributor, Ingester, Querier, Query Frontend, Compactor) writing chunk streams to S3/GCS/MinIO with index-free log contents and label indexing in TSDB.",
+    "keyFeatures": [
+      "PromQL-inspired LogQL query language with line filtering, parsing, and metric generation",
+      "Label-only indexing drastically minimizing index storage and memory requirements",
+      "100% cloud-native object storage backend (S3, GCS, Azure Blob, MinIO)",
+      "Multi-tenant isolation and seamless integration with Grafana visualization"
+    ],
+    "stars": 25000,
+    "iconEmoji": "🪵",
+    "tags": [
+      "Logging",
+      "Log Aggregation",
+      "LogQL",
+      "Object Storage",
+      "Prometheus-Style",
+      "Multi-Tenant"
+    ]
+  },
+  {
+    "id": "grafana-tempo",
+    "name": "Grafana Tempo",
+    "tagline": "High-scale, cost-effective distributed tracing backend requiring only object storage",
+    "description": "Grafana Tempo is an open-source, easy-to-use, and high-scale distributed tracing backend. Tempo is cost-effective, requiring only object storage to operate, and is deeply integrated with Grafana, Prometheus, and Loki.",
+    "category": "Observability",
+    "languages": ["Go"],
+    "license": "AGPL-3.0",
+    "websiteUrl": "https://grafana.com/oss/tempo/",
+    "githubUrl": "https://github.com/grafana/tempo",
+    "documentationUrl": "https://grafana.com/docs/tempo/latest/",
+    "architectureNotes": "Microservices architecture (Distributor, Ingester, Querier, Compactor) writing trace blocks into immutable Parquet/custom block formats directly into standard object storage with a TraceQL search engine.",
+    "keyFeatures": [
+      "TraceQL query engine for expressive search over trace attributes, spans, and durations",
+      "Massive scale ingestion requiring only inexpensive object storage without external indexes",
+      "Ingests traces from OpenTelemetry (OTLP), Jaeger, Zipkin, and OpenTracing",
+      "Deep correlation with metrics and logs within Grafana dashboards"
+    ],
+    "stars": 6000,
+    "iconEmoji": "⏱️",
+    "tags": [
+      "Distributed Tracing",
+      "TraceQL",
+      "Object Storage",
+      "High Scale",
+      "Grafana",
+      "APM"
+    ]
+  },
+  {
+    "id": "victoriametrics",
+    "name": "VictoriaMetrics",
+    "tagline": "Fast, cost-effective, and scalable monitoring solution and time series database",
+    "description": "VictoriaMetrics is a fast, cost-effective, and scalable open-source time series database (TSDB) and monitoring solution designed for high data ingestion rates and long-term storage of Prometheus metrics.",
+    "category": "Observability",
+    "languages": ["Go"],
+    "license": "Apache-2.0",
+    "websiteUrl": "https://victoriametrics.com",
+    "githubUrl": "https://github.com/VictoriaMetrics/VictoriaMetrics",
+    "documentationUrl": "https://docs.victoriametrics.com/",
+    "architectureNotes": "Single-node and cluster versions with decoupled vmstorage, vminsert, and vmselect components using a parts-based merge-tree storage architecture and zstd compression for low memory footprint and high I/O throughput.",
+    "keyFeatures": [
+      "Drop-in replacement for Prometheus with full PromQL and MetricsQL query support",
+      "Up to 10x lower RAM and disk consumption compared to standard TSDB engines",
+      "High ingestion throughput handling millions of data points per second per node",
+      "Multi-tenancy support and seamless long-term retention capabilities"
+    ],
+    "stars": 13000,
+    "iconEmoji": "⚡",
+    "tags": [
+      "TSDB",
+      "Metrics",
+      "PromQL",
+      "MetricsQL",
+      "Monitoring",
+      "Time Series",
+      "High Throughput"
+    ]
+  },
+  {
+    "id": "fluent-bit",
+    "name": "Fluent Bit",
+    "tagline": "Fast and lightweight log and metric processor, forwarder, and telemetry agent",
+    "description": "Fluent Bit is a super fast, lightweight, and highly scalable log and metric processor and forwarder for Linux, macOS, Windows, and BSD. It is the preferred logging agent for cloud-native and Kubernetes environments.",
+    "category": "Observability",
+    "languages": ["C"],
+    "license": "Apache-2.0",
+    "websiteUrl": "https://fluentbit.io",
+    "githubUrl": "https://github.com/fluent/fluent-bit",
+    "documentationUrl": "https://docs.fluentbit.io/manual/",
+    "architectureNotes": "Event-driven asynchronous engine built in C with cooperative coroutines, pluggable pipeline architecture of Inputs, Parsers, Filters, Buffers (memory and filesystem backed), and Outputs.",
+    "keyFeatures": [
+      "Extremely lightweight memory footprint (~650KB binary, <50MB RAM runtime)",
+      "Processes hundreds of thousands of events per second with minimal CPU utilization",
+      "Rich ecosystem of 100+ input and output plugins (Kafka, OpenSearch, Loki, OTel, S3)",
+      "Native OpenTelemetry, Prometheus metrics, and structured log parsing"
+    ],
+    "stars": 6500,
+    "iconEmoji": "🚚",
+    "tags": [
+      "Log Processor",
+      "Log Forwarder",
+      "Telemetry",
+      "Kubernetes",
+      "CNCF",
+      "C",
+      "Logging"
+    ]
+  },
+  {
+    "id": "signoz",
+    "name": "SigNoz",
+    "tagline": "Open-source observability and APM platform built natively on OpenTelemetry and ClickHouse",
+    "description": "SigNoz is an open-source APM (Application Performance Monitoring) and observability platform that helps developers monitor applications and troubleshoot problems in distributed systems by unifying metrics, traces, and logs.",
+    "category": "Observability",
+    "languages": ["Go", "TypeScript"],
+    "license": "Apache-2.0",
+    "websiteUrl": "https://signoz.io",
+    "githubUrl": "https://github.com/SigNoz/signoz",
+    "documentationUrl": "https://signoz.io/docs/",
+    "architectureNotes": "Integrated OpenTelemetry Collector ingestion pipeline paired with ClickHouse columnar storage for high-performance telemetry analytics, Go query/alerting services, and React dashboard UI.",
+    "keyFeatures": [
+      "Unified pane of glass for metrics, traces, and logs with deep cross-correlation",
+      "Native OpenTelemetry standard instrumentation with zero vendor lock-in",
+      "Blazing-fast analytical queries powered by ClickHouse columnar store",
+      "Out-of-the-box RED metrics (Rate, Error, Duration) and service dependency maps"
+    ],
+    "stars": 20000,
+    "iconEmoji": "📈",
+    "tags": [
+      "APM",
+      "OpenTelemetry",
+      "ClickHouse",
+      "Tracing",
+      "Metrics",
+      "Logs",
+      "Observability"
+    ]
+  },
+  {
+    "id": "pyroscope",
+    "name": "Grafana Pyroscope",
+    "tagline": "Continuous profiling platform for finding performance bottlenecks and resource leaks",
+    "description": "Pyroscope is an open-source continuous profiling platform that enables developers to understand application resource usage (CPU, memory, lock contention, goroutines) down to the exact line of code in production.",
+    "category": "Observability",
+    "languages": ["Go", "Rust"],
+    "license": "AGPL-3.0",
+    "websiteUrl": "https://grafana.com/oss/pyroscope/",
+    "githubUrl": "https://github.com/grafana/pyroscope",
+    "documentationUrl": "https://grafana.com/docs/pyroscope/latest/",
+    "architectureNotes": "Agent-server continuous profiling pipeline ingesting pprof and eBPF formats, compacting profile trees with custom Trie-based storage and object storage backends (S3, GCS), with flamegraph rendering engines.",
+    "keyFeatures": [
+      "Interactive Flame Graphs and differential profiling to isolate performance regressions",
+      "Support for eBPF kernel profiling and polyglot application runtimes (Go, Java, Python, Rust, Node, Ruby)",
+      "Ultra-low CPU and memory profiling overhead (<1% CPU)",
+      "Seamless correlation with traces in Grafana and OpenTelemetry"
+    ],
+    "stars": 10000,
+    "iconEmoji": "🔥",
+    "tags": [
+      "Profiling",
+      "Continuous Profiling",
+      "Flame Graph",
+      "eBPF",
+      "Performance",
+      "Grafana"
+    ]
+  },
+  {
+    "id": "thanos",
+    "name": "Thanos",
+    "tagline": "Highly available metric system with unbounded storage capacity for Prometheus",
+    "description": "Thanos is an open-source, highly available metric system that transforms existing Prometheus deployments into a unified monitoring system with a global query view and unlimited historical metric storage.",
+    "category": "Observability",
+    "languages": ["Go"],
+    "license": "Apache-2.0",
+    "websiteUrl": "https://thanos.io",
+    "githubUrl": "https://github.com/thanos-io/thanos",
+    "documentationUrl": "https://thanos.io/tip/thanos/quick-tutorial.md/",
+    "architectureNotes": "Component-based architecture (Sidecar, Querier/Query Frontend, Store Gateway, Compactor, Receiver, Ruler) storing historical Prometheus TSDB blocks into object storage (S3, GCS, Azure Blob, MinIO) with distributed PromQL query federation.",
+    "keyFeatures": [
+      "Global querying view across multiple Prometheus clusters, regions, and cloud providers",
+      "Seamless downsampling and long-term metric storage in cost-effective object storage",
+      "Automatic deduplication of metrics collected from Prometheus HA pairs",
+      "100% PromQL API compatibility for existing Grafana dashboards and alerts"
+    ],
+    "stars": 14000,
+    "iconEmoji": "🪐",
+    "tags": [
+      "Prometheus",
+      "TSDB",
+      "High Availability",
+      "Long-Term Storage",
+      "CNCF",
+      "Metrics"
+    ]
   }
 ]
